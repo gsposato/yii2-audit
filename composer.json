@@ -44,5 +44,11 @@
   },
   "extra": {
     "bootstrap": "bedezign\\yii2\\audit\\Bootstrap"
-  }
+  },
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "git@github.com:gsposato/yii2-bower-asset.git"
+    }
+  ]
 }
