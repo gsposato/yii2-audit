@@ -31,7 +31,7 @@
     "ext-bcmath": "*",
     "yiisoft/yii2": "^2.0.13",
     "yiisoft/yii2-debug": "^2.0.7",
-    "2amigos/yii2-chartjs-widget": "^2.0.1",
+    "gsposato/yii2-bower-asset": "*",
     "phpspec/php-diff": "1.*"
   },
   "suggest": {
