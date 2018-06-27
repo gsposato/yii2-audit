@@ -2,8 +2,8 @@
 
 namespace tests\codeception\unit;
 
-use bedezign\yii2\audit\models\AuditEntry;
-use bedezign\yii2\audit\models\AuditTrail;
+use gsposato\yii2\audit\models\AuditEntry;
+use gsposato\yii2\audit\models\AuditTrail;
 use Codeception\Specify;
 
 /**

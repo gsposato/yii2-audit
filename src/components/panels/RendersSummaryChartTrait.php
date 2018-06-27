@@ -5,11 +5,11 @@
  * Time: 12:10 PM
  */
 
-namespace bedezign\yii2\audit\components\panels;
+namespace gsposato\yii2\audit\components\panels;
 
 /**
  * Trait RendersSummaryChartTrait
- * @package bedezign\yii2\audit\components\panels
+ * @package gsposato\yii2\audit\components\panels
  *
  * Used by audit panels or controllers which want to render a summary chart in their view
  */

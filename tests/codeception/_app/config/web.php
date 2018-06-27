@@ -6,14 +6,14 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'tests\app\controllers',
     'bootstrap' => [
-        'bedezign\yii2\audit\Bootstrap',
+        'gsposato\yii2\audit\Bootstrap',
         'audit',
     ],
     'extensions' => require(VENDOR_DIR . '/yiisoft/extensions.php'),
     'aliases' => [
         '@vendor' => VENDOR_DIR,
         '@bower' => VENDOR_DIR . '/bower-asset',
-        '@bedezign/yii2/audit' => realpath(__DIR__ . '../../../../src'),
+        '@gsposato/yii2/audit' => realpath(__DIR__ . '../../../../src'),
     ],
     'params' => [
         'supportEmail' => 'test@example.com',
@@ -30,7 +30,7 @@ return [
         ],
         'db' => require __DIR__ . '/db.php',
         'errorHandler' => [
-            'class' => '\bedezign\yii2\audit\components\web\ErrorHandler',
+            'class' => '\gsposato\yii2\audit\components\web\ErrorHandler',
             'errorAction' => 'site/error',
         ],
         'log' => [
@@ -63,7 +63,7 @@ return [
     ],
     'modules' => [
         'audit' => [
-            'class' => 'bedezign\yii2\audit\Audit',
+            'class' => 'gsposato\yii2\audit\Audit',
             'accessIps' => null,
             'accessUsers' => null,
             'accessRoles' => null,
@@ -74,8 +74,8 @@ return [
                 'audit/*',
             ],
             'panelsMerge' => [
-                'audit/asset' => ['class' => 'bedezign\yii2\audit\panels\AssetPanel'],
-                'audit/config' => ['class' => 'bedezign\yii2\audit\panels\ConfigPanel'],
+                'audit/asset' => ['class' => 'gsposato\yii2\audit\panels\AssetPanel'],
+                'audit/config' => ['class' => 'gsposato\yii2\audit\panels\ConfigPanel'],
                 'app/views' => ['class' => 'tests\app\panels\ViewsPanel'],
             ],
         ],

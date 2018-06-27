@@ -1,13 +1,13 @@
 <?php
 
-namespace bedezign\yii2\audit\models;
+namespace gsposato\yii2\audit\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 
 /**
  * AuditJavascriptSearch
- * @package bedezign\yii2\audit\models
+ * @package gsposato\yii2\audit\models
  */
 class AuditJavascriptSearch extends AuditJavascript
 {

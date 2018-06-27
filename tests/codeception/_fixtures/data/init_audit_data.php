@@ -24,7 +24,7 @@ return [
                 'Content-Type' => 'text/html; charset=UTF-8',
             ],
             'route' => 'audit/entry/view',
-            'action' => 'bedezign\\yii2\\audit\\controllers\\EntryController::actionView()',
+            'action' => 'gsposato\\yii2\\audit\\controllers\\EntryController::actionView()',
             'actionParams' => [
                 0 => '2',
                 1 => '',
@@ -128,7 +128,7 @@ return [
         'data' => serialize([
             'messages' => [
                 [
-                    'Bootstrap with bedezign\\yii2\\audit\\Bootstrap::bootstrap()',
+                    'Bootstrap with gsposato\\yii2\\audit\\Bootstrap::bootstrap()',
                     8,
                     'yii\\base\\Application::bootstrap',
                     1435383751.7968,

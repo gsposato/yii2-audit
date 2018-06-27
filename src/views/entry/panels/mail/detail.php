@@ -3,8 +3,8 @@
 /* @var $searchModel AuditMailSearch */
 /* @var $dataProvider ArrayDataProvider */
 
-use bedezign\yii2\audit\models\AuditMailSearch;
-use bedezign\yii2\audit\panels\MailPanel;
+use gsposato\yii2\audit\models\AuditMailSearch;
+use gsposato\yii2\audit\panels\MailPanel;
 use yii\data\ArrayDataProvider;
 use yii\grid\GridView;
 use yii\helpers\Html;

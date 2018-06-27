@@ -1,8 +1,8 @@
 <?php
 /* @var $panel TrailPanel */
 
-use bedezign\yii2\audit\models\AuditTrail;
-use bedezign\yii2\audit\panels\TrailPanel;
+use gsposato\yii2\audit\models\AuditTrail;
+use gsposato\yii2\audit\panels\TrailPanel;
 use dosamigos\chartjs\ChartJs;
 
 $days = [];

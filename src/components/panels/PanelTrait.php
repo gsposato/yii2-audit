@@ -1,16 +1,16 @@
 <?php
 
-namespace bedezign\yii2\audit\components\panels;
+namespace gsposato\yii2\audit\components\panels;
 
-use bedezign\yii2\audit\Audit;
-use bedezign\yii2\audit\models\AuditData;
-use bedezign\yii2\audit\models\AuditEntry;
+use gsposato\yii2\audit\Audit;
+use gsposato\yii2\audit\models\AuditData;
+use gsposato\yii2\audit\models\AuditEntry;
 use yii\helpers\Url;
 use yii\web\View;
 
 /**
  * PanelTrait
- * @package bedezign\yii2\audit\panels
+ * @package gsposato\yii2\audit\panels
  *
  * @property Audit $module
  * @property array|mixed $data

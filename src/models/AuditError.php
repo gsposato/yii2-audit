@@ -1,13 +1,13 @@
 <?php
 
-namespace bedezign\yii2\audit\models;
+namespace gsposato\yii2\audit\models;
 
-use bedezign\yii2\audit\components\db\ActiveRecord;
+use gsposato\yii2\audit\components\db\ActiveRecord;
 use Yii;
 
 /**
  * AuditError
- * @package bedezign\yii2\audit\models
+ * @package gsposato\yii2\audit\models
  *
  * @property int           $id
  * @property int           $entry_id

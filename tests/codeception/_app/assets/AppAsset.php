@@ -19,6 +19,6 @@ class AppAsset extends AssetBundle
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
-        'bedezign\yii2\audit\web\JSLoggingAsset',
+        'gsposato\yii2\audit\web\JSLoggingAsset',
     ];
 }

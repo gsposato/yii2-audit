@@ -20,7 +20,7 @@ class ActiveFixture extends \yii\test\ActiveFixture
     {
         $data = parent::getData();
         $object = new $this->modelClass;
-        if ($object instanceof \bedezign\yii2\audit\components\db\ActiveRecord) {
+        if ($object instanceof \gsposato\yii2\audit\components\db\ActiveRecord) {
             $reflection = new \ReflectionClass($object);
 
             $autoSerialize = $reflection->getProperty('autoSerialize');

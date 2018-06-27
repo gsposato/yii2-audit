@@ -53,7 +53,7 @@ echo Nav::widget([
 ]);
 echo Nav::widget([
     'items' => [
-        ['label' => 'Project Homepage', 'url' => 'https://bedezign.github.io/yii2-audit/'],
+        ['label' => 'Project Homepage', 'url' => 'https://gsposato.github.io/yii2-audit/'],
     ],
     'options' => ['class' => 'navbar-nav navbar-right'],
 ]);
@@ -79,7 +79,7 @@ if (isset($this->params['jumbotron'])) {
         <hr>
         <?= date('Y-m-d H:i:s'); ?>
         <br>
-        <?= $this->render('@bedezign/yii2/audit/views/_audit_entry_id', ['style' => '']); ?>
+        <?= $this->render('@gsposato/yii2/audit/views/_audit_entry_id', ['style' => '']); ?>
     </footer>
 </div>
 

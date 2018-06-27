@@ -1,16 +1,16 @@
 <?php
-namespace bedezign\yii2\audit;
+namespace gsposato\yii2\audit;
 
 use Yii;
 use yii\base\Exception;
 use yii\db\ActiveRecord;
 
-use bedezign\yii2\audit\models\AuditTrail;
+use gsposato\yii2\audit\models\AuditTrail;
 use yii\web\Application;
 
 /**
  * Class AuditTrailBehavior
- * @package bedezign\yii2\audit
+ * @package gsposato\yii2\audit
  *
  * @property \yii\db\ActiveRecord $owner
  */

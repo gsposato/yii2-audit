@@ -1,8 +1,8 @@
 <?php
 /* @var $panel ErrorPanel */
 
-use bedezign\yii2\audit\models\AuditError;
-use bedezign\yii2\audit\panels\ErrorPanel;
+use gsposato\yii2\audit\models\AuditError;
+use gsposato\yii2\audit\panels\ErrorPanel;
 use dosamigos\chartjs\ChartJs;
 
 $days = [];

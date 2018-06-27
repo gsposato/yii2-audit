@@ -1,11 +1,11 @@
 <?php
 
-namespace bedezign\yii2\audit\panels;
+namespace gsposato\yii2\audit\panels;
 
-use bedezign\yii2\audit\Audit;
-use bedezign\yii2\audit\components\panels\Panel;
-use bedezign\yii2\audit\models\AuditMail;
-use bedezign\yii2\audit\models\AuditMailSearch;
+use gsposato\yii2\audit\Audit;
+use gsposato\yii2\audit\components\panels\Panel;
+use gsposato\yii2\audit\models\AuditMail;
+use gsposato\yii2\audit\models\AuditMailSearch;
 use Swift_Message;
 use Swift_Mime_Attachment;
 use Swift_Mime_MimePart;
@@ -18,7 +18,7 @@ use yii\swiftmailer\Message;
 
 /**
  * MailPanel
- * @package bedezign\yii2\audit\panels
+ * @package gsposato\yii2\audit\panels
  */
 class MailPanel extends Panel
 {

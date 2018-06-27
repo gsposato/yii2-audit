@@ -3,11 +3,11 @@
 namespace tests\codeception\unit;
 
 use tests\app\controllers\SiteController;
-use bedezign\yii2\audit\Audit;
-use bedezign\yii2\audit\tests\UnitTester;
+use gsposato\yii2\audit\Audit;
+use gsposato\yii2\audit\tests\UnitTester;
 use Yii;
-use bedezign\yii2\audit\models\AuditEntry;
-use bedezign\yii2\audit\models\AuditData;
+use gsposato\yii2\audit\models\AuditEntry;
+use gsposato\yii2\audit\models\AuditData;
 use Codeception\Specify;
 use yii\base\Action;
 use yii\base\ActionEvent;

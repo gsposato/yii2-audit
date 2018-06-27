@@ -4,5 +4,5 @@ namespace tests\codeception\_fixtures;
 
 class AuditJavascriptFixture extends ActiveFixture
 {
-    public $modelClass = 'bedezign\yii2\audit\models\AuditJavascript';
+    public $modelClass = 'gsposato\yii2\audit\models\AuditJavascript';
 }

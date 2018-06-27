@@ -2,8 +2,8 @@
 
 namespace tests\app\models;
 
-use bedezign\yii2\audit\AuditTrailBehavior;
-use bedezign\yii2\audit\models\AuditTrail;
+use gsposato\yii2\audit\AuditTrailBehavior;
+use gsposato\yii2\audit\models\AuditTrail;
 use yii\db\ActiveRecord;
 
 /**

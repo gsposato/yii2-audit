@@ -6,19 +6,19 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'tests\app\commands',
     'bootstrap' => [
-        'bedezign\yii2\audit\Bootstrap',
+        'gsposato\yii2\audit\Bootstrap',
         'audit',
     ],
     'extensions' => require(VENDOR_DIR . '/yiisoft/extensions.php'),
     'aliases' => [
         '@vendor' => VENDOR_DIR,
-        '@bedezign/yii2/audit' => realpath(__DIR__ . '../../../../src'),
+        '@gsposato/yii2/audit' => realpath(__DIR__ . '../../../../src'),
     ],
     'params' => [
         'supportEmail' => 'errors@example.com',
     ],
     'controllerMap' => [
-        'audit' => 'bedezign\yii2\audit\commands\AuditController',
+        'audit' => 'gsposato\yii2\audit\commands\AuditController',
     ],
     'components' => [
         'authManager' => [
@@ -29,7 +29,7 @@ return [
         ],
         'db' => require __DIR__ . '/db.php',
         'errorHandler' => [
-            'class' => '\bedezign\yii2\audit\components\console\ErrorHandler',
+            'class' => '\gsposato\yii2\audit\components\console\ErrorHandler',
         ],
         'log' => [
             'traceLevel' => getenv('YII_TRACE_LEVEL'),
@@ -55,7 +55,7 @@ return [
     ],
     'modules' => [
         'audit' => [
-            'class' => 'bedezign\yii2\audit\Audit',
+            'class' => 'gsposato\yii2\audit\Audit',
             'accessIps' => null,
             'accessUsers' => null,
             'accessRoles' => null,

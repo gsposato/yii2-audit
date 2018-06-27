@@ -7,7 +7,7 @@ use yii\db\ActiveRecord;
 class AuditTestCase extends \Codeception\Test\Unit
 {
     /**
-     * @return \bedezign\yii2\audit\Audit
+     * @return \gsposato\yii2\audit\Audit
      */
     public function module()
     {

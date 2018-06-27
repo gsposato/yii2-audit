@@ -1,16 +1,16 @@
 <?php
 
-namespace bedezign\yii2\audit\controllers;
+namespace gsposato\yii2\audit\controllers;
 
-use bedezign\yii2\audit\components\web\Controller;
-use bedezign\yii2\audit\models\AuditJavascript;
-use bedezign\yii2\audit\models\AuditJavascriptSearch;
+use gsposato\yii2\audit\components\web\Controller;
+use gsposato\yii2\audit\models\AuditJavascript;
+use gsposato\yii2\audit\models\AuditJavascriptSearch;
 use Yii;
 use yii\web\NotFoundHttpException;
 
 /**
  * JavascriptController
- * @package bedezign\yii2\audit\controllers
+ * @package gsposato\yii2\audit\controllers
  */
 class JavascriptController extends Controller
 {

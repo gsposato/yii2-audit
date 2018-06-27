@@ -3,9 +3,9 @@
 namespace tests\codeception\unit;
 
 use tests\app\models\Post;
-use bedezign\yii2\audit\models\AuditEntry;
-use bedezign\yii2\audit\models\AuditTrail;
-use bedezign\yii2\audit\tests\UnitTester;
+use gsposato\yii2\audit\models\AuditEntry;
+use gsposato\yii2\audit\models\AuditTrail;
+use gsposato\yii2\audit\tests\UnitTester;
 use Codeception\Specify;
 
 /**

@@ -1,13 +1,13 @@
 <?php
 
-namespace bedezign\yii2\audit\components;
+namespace gsposato\yii2\audit\components;
 
-use bedezign\yii2\audit\Audit;
+use gsposato\yii2\audit\Audit;
 
 
 /**
  * Class Migration
- * @package bedezign\yii2\audit\components
+ * @package gsposato\yii2\audit\components
  */
 class Migration extends \yii\db\Migration
 {

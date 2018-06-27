@@ -12,7 +12,7 @@ namespace {
     }
 }
 
-namespace bedezign\yii2\audit\panels {
+namespace gsposato\yii2\audit\panels {
 
     function curl_exec($resource)
     {

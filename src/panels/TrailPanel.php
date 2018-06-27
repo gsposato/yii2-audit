@@ -1,16 +1,16 @@
 <?php
 
-namespace bedezign\yii2\audit\panels;
+namespace gsposato\yii2\audit\panels;
 
-use bedezign\yii2\audit\components\panels\Panel;
-use bedezign\yii2\audit\models\AuditTrail;
-use bedezign\yii2\audit\models\AuditTrailSearch;
+use gsposato\yii2\audit\components\panels\Panel;
+use gsposato\yii2\audit\models\AuditTrail;
+use gsposato\yii2\audit\models\AuditTrailSearch;
 use Yii;
 use yii\grid\GridViewAsset;
 
 /**
  * TrailPanel
- * @package bedezign\yii2\audit\panels
+ * @package gsposato\yii2\audit\panels
  */
 class TrailPanel extends Panel
 {

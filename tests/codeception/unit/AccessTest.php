@@ -4,9 +4,9 @@ namespace tests\codeception\unit;
 
 use Codeception\Test\Unit;
 use tests\app\models\User;
-use bedezign\yii2\audit\Audit;
-use bedezign\yii2\audit\components\Access;
-use bedezign\yii2\audit\tests\UnitTester;
+use gsposato\yii2\audit\Audit;
+use gsposato\yii2\audit\components\Access;
+use gsposato\yii2\audit\tests\UnitTester;
 
 /**
  * AccessTest

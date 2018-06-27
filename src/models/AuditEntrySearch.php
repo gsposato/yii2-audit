@@ -1,8 +1,8 @@
 <?php
 
-namespace bedezign\yii2\audit\models;
+namespace gsposato\yii2\audit\models;
 
-use bedezign\yii2\audit\Audit;
+use gsposato\yii2\audit\Audit;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
@@ -10,7 +10,7 @@ use yii\db\ActiveQuery;
 
 /**
  * AuditEntrySearch
- * @package bedezign\yii2\audit\models
+ * @package gsposato\yii2\audit\models
  */
 class AuditEntrySearch extends AuditEntry
 {

@@ -36,7 +36,7 @@ return [
             3 => [
                 'function' => 'actionView',
                 'type' => '->',
-                'class' => 'bedezign\\yii2\\audit\\controllers\\EntryController',
+                'class' => 'gsposato\\yii2\\audit\\controllers\\EntryController',
                 'file' => '/vagrant/git/yii2-audit/vendor/yiisoft/yii2/base/InlineAction.php',
                 'line' => 55,
                 'args' => [],

@@ -2,11 +2,11 @@
 
 namespace tests\codeception\unit;
 
-use bedezign\yii2\audit\models\AuditEntry;
-use bedezign\yii2\audit\models\AuditEntrySearch;
-use bedezign\yii2\audit\models\AuditErrorSearch;
-use bedezign\yii2\audit\models\AuditJavascript;
-use bedezign\yii2\audit\models\AuditJavascriptSearch;
+use gsposato\yii2\audit\models\AuditEntry;
+use gsposato\yii2\audit\models\AuditEntrySearch;
+use gsposato\yii2\audit\models\AuditErrorSearch;
+use gsposato\yii2\audit\models\AuditJavascript;
+use gsposato\yii2\audit\models\AuditJavascriptSearch;
 use Codeception\Specify;
 use yii\base\Action;
 use yii\base\InlineAction;

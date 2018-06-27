@@ -1,5 +1,5 @@
 <?php
-namespace bedezign\yii2\audit\tests;
+namespace gsposato\yii2\audit\tests;
 
 /**
  * Inherited Methods

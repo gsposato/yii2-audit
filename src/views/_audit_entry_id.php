@@ -1,11 +1,11 @@
 <?php
 
-use bedezign\yii2\audit\Audit;
-use bedezign\yii2\audit\components\Access;
+use gsposato\yii2\audit\Audit;
+use gsposato\yii2\audit\components\Access;
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var bedezign\yii2\audit\models\AuditEntry $entry */
+/** @var gsposato\yii2\audit\models\AuditEntry $entry */
 
 if ($auditEntry = Audit::getInstance()->getEntry()) {
     if (!isset($style)) {

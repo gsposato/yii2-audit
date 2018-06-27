@@ -1,14 +1,14 @@
 <?php
 
-namespace bedezign\yii2\audit\panels;
+namespace gsposato\yii2\audit\panels;
 
-use bedezign\yii2\audit\components\panels\DataStoragePanelTrait;
+use gsposato\yii2\audit\components\panels\DataStoragePanelTrait;
 use Yii;
 use yii\base\InlineAction;
 
 /**
  * RequestPanel
- * @package bedezign\yii2\audit\panels
+ * @package gsposato\yii2\audit\panels
  */
 class RequestPanel extends \yii\debug\panels\RequestPanel
 {

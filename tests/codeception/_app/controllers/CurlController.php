@@ -2,7 +2,7 @@
 
 namespace tests\app\controllers;
 
-use bedezign\yii2\audit\Audit;
+use gsposato\yii2\audit\Audit;
 use yii\helpers\Url;
 use yii\web\Controller;
 

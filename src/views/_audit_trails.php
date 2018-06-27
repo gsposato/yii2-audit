@@ -1,10 +1,10 @@
 <?php
 
-use bedezign\yii2\audit\Audit;
-use bedezign\yii2\audit\components\Access;
-use bedezign\yii2\audit\models\AuditTrail;
-use bedezign\yii2\audit\models\AuditTrailSearch;
-use bedezign\yii2\audit\web\AuditAsset;
+use gsposato\yii2\audit\Audit;
+use gsposato\yii2\audit\components\Access;
+use gsposato\yii2\audit\models\AuditTrail;
+use gsposato\yii2\audit\models\AuditTrailSearch;
+use gsposato\yii2\audit\web\AuditAsset;
 use yii\db\ActiveQuery;
 use yii\grid\GridView;
 use yii\helpers\Html;

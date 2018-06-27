@@ -1,16 +1,16 @@
 <?php
 
-namespace bedezign\yii2\audit\controllers;
+namespace gsposato\yii2\audit\controllers;
 
-use bedezign\yii2\audit\components\web\Controller;
-use bedezign\yii2\audit\models\AuditTrail;
-use bedezign\yii2\audit\models\AuditTrailSearch;
+use gsposato\yii2\audit\components\web\Controller;
+use gsposato\yii2\audit\models\AuditTrail;
+use gsposato\yii2\audit\models\AuditTrailSearch;
 use Yii;
 use yii\web\NotFoundHttpException;
 
 /**
  * TrailController
- * @package bedezign\yii2\audit\controllers
+ * @package gsposato\yii2\audit\controllers
  */
 class TrailController extends Controller
 {

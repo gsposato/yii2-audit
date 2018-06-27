@@ -3,8 +3,8 @@
 /* @var $searchModel yii\debug\models\search\Log */
 /* @var $dataProvider yii\data\ArrayDataProvider */
 
-use bedezign\yii2\audit\Audit;
-use bedezign\yii2\audit\models\AuditTrailSearch;
+use gsposato\yii2\audit\Audit;
+use gsposato\yii2\audit\models\AuditTrailSearch;
 use yii\helpers\Html;
 use yii\grid\GridView;
 

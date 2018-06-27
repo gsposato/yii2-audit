@@ -2,12 +2,12 @@
 
 namespace tests\codeception\unit;
 
-use bedezign\yii2\audit\Audit;
-use bedezign\yii2\audit\models\AuditData;
-use bedezign\yii2\audit\models\AuditError;
-use bedezign\yii2\audit\models\AuditJavascript;
-use bedezign\yii2\audit\models\AuditMail;
-use bedezign\yii2\audit\models\AuditTrail;
+use gsposato\yii2\audit\Audit;
+use gsposato\yii2\audit\models\AuditData;
+use gsposato\yii2\audit\models\AuditError;
+use gsposato\yii2\audit\models\AuditJavascript;
+use gsposato\yii2\audit\models\AuditMail;
+use gsposato\yii2\audit\models\AuditTrail;
 use Codeception\Specify;
 
 /**

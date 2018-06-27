@@ -2,11 +2,11 @@
 
 namespace tests\codeception\unit;
 
-use bedezign\yii2\audit\Audit;
-use bedezign\yii2\audit\models\AuditEntry;
-use bedezign\yii2\audit\models\AuditError;
-use bedezign\yii2\audit\models\AuditMail;
-use bedezign\yii2\audit\tests\UnitTester;
+use gsposato\yii2\audit\Audit;
+use gsposato\yii2\audit\models\AuditEntry;
+use gsposato\yii2\audit\models\AuditError;
+use gsposato\yii2\audit\models\AuditMail;
+use gsposato\yii2\audit\tests\UnitTester;
 use Codeception\Specify;
 use Yii;
 use yii\db\Exception;

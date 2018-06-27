@@ -2,8 +2,8 @@
 
 namespace tests\app\controllers;
 
-use bedezign\yii2\audit\Audit;
-use bedezign\yii2\audit\components\SoapClient;
+use gsposato\yii2\audit\Audit;
+use gsposato\yii2\audit\components\SoapClient;
 use yii\helpers\Url;
 use yii\web\Controller;
 

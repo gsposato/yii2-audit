@@ -3,16 +3,16 @@
  * This serves as both the Module for the MVC part of the audit and the configuration/entry point for the actual
  * audit process.
  *
- * @author    Steve Guns <steve@bedezign.com>
- * @package   com.bedezign.yii2.audit
+ * @author    Steve Guns <steve@gsposato.com>
+ * @package   com.gsposato.yii2.audit
  * @copyright 2014-2015 B&E DeZign
  */
 
-namespace bedezign\yii2\audit;
+namespace gsposato\yii2\audit;
 
-use bedezign\yii2\audit\components\panels\Panel;
-use bedezign\yii2\audit\models\AuditEntry;
-use bedezign\yii2\audit\models\AuditError;
+use gsposato\yii2\audit\components\panels\Panel;
+use gsposato\yii2\audit\models\AuditEntry;
+use gsposato\yii2\audit\models\AuditError;
 use Yii;
 use yii\base\ActionEvent;
 use yii\base\Application;
@@ -28,23 +28,23 @@ use yii\helpers\ArrayHelper;
  * To configure it you need to do 2 things:
  * - add a module configuration entry:
  *     'modules' => [
- *        'audit' => 'bedezign\yii2\audit\Audit',
+ *        'audit' => 'gsposato\yii2\audit\Audit',
  *     ]
  *   or optionally with configuration:
  *     'modules' => [
  *        'audit' => [
- *            'class' => 'bedezign\yii2\audit\Audit',
+ *            'class' => 'gsposato\yii2\audit\Audit',
  *            'ignoreActions' => ['debug/*']
  *     ]
  * - If you want to auto track actions, be sure to add the module to the application bootstrapping:
  *    'bootstrap' => ['audit'],
  *
- * @package bedezign\yii2\audit
+ * @package gsposato\yii2\audit
  * @property AuditEntry $entry
  *
  * @method void data($type, $data)                                                                      @see ExtraDataPanel::trackData()
- * @method \bedezign\yii2\audit\models\AuditError exception(\Exception $exception)                      @see ErrorPanel::log()
- * @method \bedezign\yii2\audit\models\AuditError errorMessage($message, $code, $file, $line, $trace)   @see ErrorPanel::logMessage()
+ * @method \gsposato\yii2\audit\models\AuditError exception(\Exception $exception)                      @see ErrorPanel::log()
+ * @method \gsposato\yii2\audit\models\AuditError errorMessage($message, $code, $file, $line, $trace)   @see ErrorPanel::logMessage()
  */
 class Audit extends Module
 {
@@ -158,21 +158,21 @@ class Audit extends Module
      */
     private $_corePanels = [
         // Tracking/logging panels
-        'audit/request'    => ['class' => 'bedezign\yii2\audit\panels\RequestPanel'],
-        'audit/db'         => ['class' => 'bedezign\yii2\audit\panels\DbPanel'],
-        'audit/log'        => ['class' => 'bedezign\yii2\audit\panels\LogPanel'],
-        'audit/asset'      => ['class' => 'bedezign\yii2\audit\panels\AssetPanel'],
-        'audit/config'     => ['class' => 'bedezign\yii2\audit\panels\ConfigPanel'],
-        'audit/profiling'  => ['class' => 'bedezign\yii2\audit\panels\ProfilingPanel'],
+        'audit/request'    => ['class' => 'gsposato\yii2\audit\panels\RequestPanel'],
+        'audit/db'         => ['class' => 'gsposato\yii2\audit\panels\DbPanel'],
+        'audit/log'        => ['class' => 'gsposato\yii2\audit\panels\LogPanel'],
+        'audit/asset'      => ['class' => 'gsposato\yii2\audit\panels\AssetPanel'],
+        'audit/config'     => ['class' => 'gsposato\yii2\audit\panels\ConfigPanel'],
+        'audit/profiling'  => ['class' => 'gsposato\yii2\audit\panels\ProfilingPanel'],
 
         // Special other panels
-        'audit/error'      => ['class' => 'bedezign\yii2\audit\panels\ErrorPanel'],
-        'audit/javascript' => ['class' => 'bedezign\yii2\audit\panels\JavascriptPanel'],
-        'audit/trail'      => ['class' => 'bedezign\yii2\audit\panels\TrailPanel'],
-        'audit/mail'       => ['class' => 'bedezign\yii2\audit\panels\MailPanel'],
-        'audit/extra'      => ['class' => 'bedezign\yii2\audit\panels\ExtraDataPanel'],
-        'audit/curl'       => ['class' => 'bedezign\yii2\audit\panels\CurlPanel'],
-        'audit/soap'       => ['class' => 'bedezign\yii2\audit\panels\SoapPanel'],
+        'audit/error'      => ['class' => 'gsposato\yii2\audit\panels\ErrorPanel'],
+        'audit/javascript' => ['class' => 'gsposato\yii2\audit\panels\JavascriptPanel'],
+        'audit/trail'      => ['class' => 'gsposato\yii2\audit\panels\TrailPanel'],
+        'audit/mail'       => ['class' => 'gsposato\yii2\audit\panels\MailPanel'],
+        'audit/extra'      => ['class' => 'gsposato\yii2\audit\panels\ExtraDataPanel'],
+        'audit/curl'       => ['class' => 'gsposato\yii2\audit\panels\CurlPanel'],
+        'audit/soap'       => ['class' => 'gsposato\yii2\audit\panels\SoapPanel'],
     ];
 
     /**
@@ -181,7 +181,7 @@ class Audit extends Module
     private $_panelFunctions = [];
 
     /**
-     * @var \bedezign\yii2\audit\models\AuditEntry If activated this is the active entry
+     * @var \gsposato\yii2\audit\models\AuditEntry If activated this is the active entry
      */
     private $_entry = null;
 
