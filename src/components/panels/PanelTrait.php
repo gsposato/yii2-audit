@@ -78,7 +78,7 @@ trait PanelTrait
     /**
      * @return string
      */
-    public function getUrl($additionalParams = NULL)
+    public function getUrl()
     {
         return Url::toRoute(['/' . $this->module->id . '/entry/view',
             'panel' => $this->id,

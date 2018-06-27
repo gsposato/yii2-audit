@@ -5,7 +5,6 @@ namespace bedezign\yii2\audit\panels;
 use bedezign\yii2\audit\components\panels\DataStoragePanelTrait;
 use Yii;
 use yii\base\InlineAction;
-use yii\helpers\Inflector;
 
 /**
  * RequestPanel
@@ -14,11 +13,6 @@ use yii\helpers\Inflector;
 class RequestPanel extends \yii\debug\panels\RequestPanel
 {
     use DataStoragePanelTrait;
-
-    /**
-     * @var array
-     */
-    public $ignoreKeys = [];
 
     /**
      * @inheritdoc
@@ -36,7 +30,7 @@ class RequestPanel extends \yii\debug\panels\RequestPanel
         if (Yii::$app->request instanceof \yii\console\Request) {
             return $this->saveCliRequest();
         }
-        return $this->cleanData(parent::save());
+        return parent::save();
     }
 
     /**
@@ -44,22 +38,22 @@ class RequestPanel extends \yii\debug\panels\RequestPanel
      */
     protected function saveCliRequest()
     {
-        return $this->cleanData([
-            'flashes' => $this->getFlashes(),
-            'statusCode' => 0,
-            'requestHeaders' => [],
+        return [
+            'flashes'         => $this->getFlashes(),
+            'statusCode'      => 0,
+            'requestHeaders'  => [],
             'responseHeaders' => [],
-            'route' => $this->getRoute(),
-            'action' => $this->getAction(),
-            'actionParams' => Yii::$app->request->params,
-            'requestBody' => [],
-            'SERVER' => empty($_SERVER) ? [] : $_SERVER,
-            'GET' => empty($_GET) ? [] : $_GET,
-            'POST' => empty($_POST) ? [] : $_POST,
-            'COOKIE' => empty($_COOKIE) ? [] : $_COOKIE,
-            'FILES' => empty($_FILES) ? [] : $_FILES,
-            'SESSION' => empty($_SESSION) ? [] : $_SESSION,
-        ]);
+            'route'           => $this->getRoute(),
+            'action'          => $this->getAction(),
+            'actionParams'    => Yii::$app->request->params,
+            'requestBody'     => [],
+            'SERVER'          => empty($_SERVER) ? [] : $_SERVER,
+            'GET'             => empty($_GET) ? [] : $_GET,
+            'POST'            => empty($_POST) ? [] : $_POST,
+            'COOKIE'          => empty($_COOKIE) ? [] : $_COOKIE,
+            'FILES'           => empty($_FILES) ? [] : $_FILES,
+            'SESSION'         => empty($_SESSION) ? [] : $_SESSION,
+        ];
     }
 
     /**
@@ -82,23 +76,9 @@ class RequestPanel extends \yii\debug\panels\RequestPanel
     protected function getRoute()
     {
         if (Yii::$app->requestedAction) {
-            return Inflector::camel2id(Yii::$app->requestedAction->getUniqueId());
+            return \yii\helpers\Inflector::camel2id(Yii::$app->requestedAction->getUniqueId());
         }
         return Yii::$app->requestedRoute;
-    }
-
-    /**
-     * @param array $data
-     * @return array
-     */
-    protected function cleanData($data)
-    {
-        foreach ($data as $k => $v) {
-            if (in_array($k, $this->ignoreKeys)) {
-                $data[$k] = null;
-            }
-        }
-        return $data;
     }
 
 }

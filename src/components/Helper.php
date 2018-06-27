@@ -13,7 +13,7 @@ use yii\helpers\VarDumper;
  * Helper
  * @package bedezign\yii2\audit\components
  */
-class Helper extends \yii\base\BaseObject
+class Helper extends \yii\base\Object
 {
     /**
      * Convert the given value into a gzip compressed blob so it can be stored in the database

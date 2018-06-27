@@ -43,7 +43,7 @@ class AuditTrail extends ActiveRecord
             'user_id'   => Yii::t('audit', 'User ID'),
             'action'    => Yii::t('audit', 'Action'),
             'model'     => Yii::t('audit', 'Type'),
-            'model_id'  => Yii::t('audit', 'Model ID'),
+            'model_id'  => Yii::t('audit', 'ID'),
             'field'     => Yii::t('audit', 'Field'),
             'old_value' => Yii::t('audit', 'Old Value'),
             'new_value' => Yii::t('audit', 'New Value'),
@@ -78,14 +78,4 @@ class AuditTrail extends ActiveRecord
         return $diff->render(new \Diff_Renderer_Html_Inline);
     }
 
-    /**
-     * @return ActiveRecord|bool
-     */
-    public function getParent()
-    {
-        $parentModel = new $this->model;
-        $parent = $parentModel::findOne($this->model_id);
-        return $parent ? $parent : $parentModel;
-    }
-    
 }

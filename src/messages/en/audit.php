@@ -64,7 +64,6 @@ return [
     'Mails' => '',
     'Memory' => '',
     'Message' => '',
-    'Model ID' => '',
     'New Value' => '',
     'No' => '',
     'Old Value' => '',

@@ -3,7 +3,6 @@
 namespace bedezign\yii2\audit\panels;
 
 use bedezign\yii2\audit\components\panels\Panel;
-use bedezign\yii2\audit\components\panels\RendersSummaryChartTrait;
 use bedezign\yii2\audit\models\AuditJavascript;
 use bedezign\yii2\audit\models\AuditJavascriptSearch;
 use Yii;
@@ -15,8 +14,6 @@ use yii\grid\GridViewAsset;
  */
 class JavascriptPanel extends Panel
 {
-    use RendersSummaryChartTrait;
-
     /**
      * @inheritdoc
      */
@@ -69,19 +66,10 @@ class JavascriptPanel extends Panel
     /**
      * @inheritdoc
      */
-    protected function getChartModel()
-    {
-        return AuditJavascript::className();
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function getChart()
     {
-        return \Yii::$app->view->render('panels/mail/chart', [
+        return \Yii::$app->view->render('panels/javascript/chart', [
             'panel' => $this,
-            'chartData' => $this->getChartData()
         ]);
     }
 

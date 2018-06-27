@@ -3,7 +3,6 @@
 namespace bedezign\yii2\audit\panels;
 
 use bedezign\yii2\audit\components\panels\Panel;
-use bedezign\yii2\audit\components\panels\RendersSummaryChartTrait;
 use bedezign\yii2\audit\models\AuditTrail;
 use bedezign\yii2\audit\models\AuditTrailSearch;
 use Yii;
@@ -15,8 +14,6 @@ use yii\grid\GridViewAsset;
  */
 class TrailPanel extends Panel
 {
-    use RendersSummaryChartTrait;
-
     /**
      * @inheritdoc
      */
@@ -50,9 +47,6 @@ class TrailPanel extends Panel
         $params = \Yii::$app->request->getQueryParams();
         $params['AuditTrailSearch']['entry_id'] = $params['id'];
         $dataProvider = $searchModel->search($params);
-        $dataProvider->pagination = [
-            'pageSize' => 1000,
-        ];
 
         return \Yii::$app->view->render('panels/trail/detail', [
             'panel' => $this,
@@ -72,19 +66,10 @@ class TrailPanel extends Panel
     /**
      * @inheritdoc
      */
-    protected function getChartModel()
-    {
-        return AuditTrail::className();
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function getChart()
     {
         return \Yii::$app->view->render('panels/trail/chart', [
             'panel' => $this,
-            'chartData' => $this->getChartData()
         ]);
     }
 

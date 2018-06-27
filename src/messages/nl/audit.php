@@ -60,7 +60,6 @@ return [
     'Mails' => 'Emails',
     'Memory' => 'Geheugen',
     'Message' => 'Bericht',
-    'Model ID' => 'Model ID',
     'No' => 'Neen',
     'Origin' => 'Afkomst',
     'Profiling' => '',

@@ -4,7 +4,6 @@ namespace bedezign\yii2\audit\panels;
 
 use bedezign\yii2\audit\Audit;
 use bedezign\yii2\audit\components\panels\Panel;
-use bedezign\yii2\audit\components\panels\RendersSummaryChartTrait;
 use bedezign\yii2\audit\models\AuditMail;
 use bedezign\yii2\audit\models\AuditMailSearch;
 use Swift_Message;
@@ -23,14 +22,6 @@ use yii\swiftmailer\Message;
  */
 class MailPanel extends Panel
 {
-    use RendersSummaryChartTrait;
-
-    /**
-     * Store full email data
-     *
-     * /!\ Set this to true will increase database size /!\
-     */
-    public $storeData = true;
 
     /**
      * @inheritdoc
@@ -86,10 +77,7 @@ class MailPanel extends Panel
             }
         }
 
-        // makes full email available for download
-        if ($this->storeData) {
-            $mail->data = $message->toString();
-        }
+        $mail->data = $message->toString();
 
         return $mail->save(false) ? $mail : null;
     }
@@ -158,19 +146,10 @@ class MailPanel extends Panel
     /**
      * @inheritdoc
      */
-    protected function getChartModel()
-    {
-        return AuditMail::className();
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function getChart()
     {
         return \Yii::$app->view->render('panels/mail/chart', [
             'panel' => $this,
-            'chartData' => $this->getChartData()
         ]);
     }
 

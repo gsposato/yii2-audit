@@ -1,6 +1,6 @@
 <?php
 
-use bedezign\yii2\audit\components\Migration;
+use yii\db\Migration;
 use yii\db\Schema;
 
 class m150626_000006_create_audit_mail extends Migration
