@@ -16,9 +16,12 @@ use gsposato\yii2\audit\components\Helper;
  */
 class ActiveRecord extends \yii\db\ActiveRecord
 {
-    /** @var bool                   If true, automatically pack and unpack the data attribute */
+	/** @var bool
+	 * If true, automatically pack and unpack the data attribute
+	 * */
     protected $autoSerialize = true;
-    /**
+
+	/**
      * @var array
      */
     protected $serializeAttributes = ['data'];
@@ -27,8 +30,9 @@ class ActiveRecord extends \yii\db\ActiveRecord
      * @return \yii\db\Connection
      */
     public static function getDb()
-    {
-        return Audit::getInstance()->getDb();
+	{
+		$audit = new Audit(1);
+		return $audit->getDb();
     }
 
     /**

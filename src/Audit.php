@@ -270,8 +270,13 @@ class Audit extends Module
      * @return \yii\db\Connection the database connection.
      */
     public function getDb()
-    {
-        return Yii::$app->{$this->db};
+	{
+		if (empty(Yii::$app->{$this->db}))
+		{
+			return array();
+		}
+
+		return Yii::$app->{$this->db};
     }
 
     /**
@@ -281,13 +286,9 @@ class Audit extends Module
      */
     public function getEntry($create = false, $new = false)
     {
-        $entry = new AuditEntry();
-        $tableSchema = $entry->getDb()->schema->getTableSchema($entry->tableName());
-        if ($tableSchema) {
-            if ((!$this->_entry && $create) || $new) {
-                $this->_entry = AuditEntry::create(true);
-            }
-        }
+		if ((!$this->_entry && $create) || $new) {
+			$this->_entry = AuditEntry::create(true);
+		}
         return $this->_entry;
     }
 
