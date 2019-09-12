@@ -13,7 +13,7 @@ use yii\helpers\VarDumper;
  * Helper
  * @package gsposato\yii2\audit\components
  */
-class Helper extends \yii\base\Object
+class Helper
 {
     /**
      * Convert the given value into a gzip compressed blob so it can be stored in the database
